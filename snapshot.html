@@ -42,7 +42,7 @@
 
       img.src = canvas.toDataURL('image/png');
       document.body.appendChild(img);
-      exportImage();
+      exportImage(canvas);
     }
 
     // use MediaDevices API
@@ -63,12 +63,12 @@
   })();
 
 
-  function exportImage(){ 
-  	var img = document.querySelector('img');
-  	console.log(img);
-  	alert("here");
-  	var string = OCRAD(img);
-	 alert(string);
+  function exportImage(canvas){ 
+  	//var img = document.querySelector('img');
+  	console.log(canvas);
+  	alert("there");
+  	var string = OCRAD(canvas);
+	  alert(string);
   }
 </script>
 </body>
